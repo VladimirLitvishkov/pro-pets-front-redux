@@ -1,6 +1,6 @@
 import React from "react";
 import {connect} from "react-redux";
-import Twit from "../../Twit";
+// import Twit from "../../Twit";
 
 class FavoritesBody extends React.Component{
 

@@ -3,7 +3,6 @@ import {connect} from "react-redux";
 import {bindActionCreators} from "redux";
 import {changeStateInside, changeStateOutside} from "../../actions/StateActions";
 import {requestPosts} from "../../actions/PostsActions";
-import {viewFindsURL, viewLostsURL, viewTwitsURL} from "../../constants/urls";
 
 class Navigation extends React.Component {
 
@@ -13,21 +12,18 @@ class Navigation extends React.Component {
                 <div className='float-right'>
                     <div>
                         <button onClick={() => {
-                            this.props.requestPosts(0, 3, viewTwitsURL);
                             this.props.changeStateInside('home');
                         }}>Home</button>
                     </div>
 
                     <div>
                         <button onClick={() => {
-                            this.props.requestPosts(0, 3, viewLostsURL);
                             this.props.changeStateInside('lost');
                         }}>Lost</button>
                     </div>
 
                     <div>
                         <button onClick={() => {
-                            this.props.requestPosts(0, 3, viewFindsURL);
                             this.props.changeStateInside('found');
                         }}>Found</button>
                     </div>

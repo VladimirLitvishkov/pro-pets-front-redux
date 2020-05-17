@@ -1,8 +1,15 @@
 import React from "react";
 import {connect} from "react-redux";
 import Post from "../../Post";
+import {bindActionCreators} from "redux";
+import {requestPosts} from "../../../actions/PostsActions";
+import {viewLostsURL} from "../../../constants/urls";
 
-class LostFoundBody extends React.Component{
+class LostBody extends React.Component{
+
+    componentDidMount() {
+        this.props.requestPosts(0,3, viewLostsURL);
+    }
 
     render() {
         return (
@@ -23,4 +30,8 @@ function mapStateToProps(state) {
     return state;
 }
 
-export default connect(mapStateToProps)(LostFoundBody);
+function mapDispatchToProps(dispatch) {
+    return bindActionCreators({requestPosts}, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(LostBody);

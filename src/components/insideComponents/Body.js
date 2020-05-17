@@ -1,18 +1,21 @@
 import React from "react";
 import {connect} from "react-redux";
 import HomeBody from "./bodies/HomeBody";
-import LostFoundBody from "./bodies/LostFoundBody";
 import FavoritesBody from "./bodies/FavoritesBody";
 import ProfileBody from "./bodies/ProfileBody";
 import ServiceBody from "./bodies/ServiceBody";
 import CreatLFPostTwitBody from "./bodies/CreatLFPostTwitBody";
 import ConfirmLFPostBody from "./bodies/ConfirmLFPostBody";
+import FoundBody from "./bodies/FoundBody";
+import LostBody from "./bodies/LostBody";
 
 class Body extends React.Component {
 
     render() {
-        if (this.props.state.inside === 'lost' || this.props.state.inside === 'found') {
-            return <LostFoundBody/>;
+        if (this.props.state.inside === 'lost') {
+            return <LostBody/>;
+        } else if (this.props.state.inside === 'found') {
+            return <FoundBody/>;
         } else if (this.props.state.inside === 'favorites') {
             return <FavoritesBody/>;
         } else if (this.props.state.inside.startsWith('profile')) {
