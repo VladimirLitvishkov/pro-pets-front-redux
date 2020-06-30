@@ -10,6 +10,7 @@ class Login extends React.Component{
     submitHandler = (e) => {
         e.preventDefault();
         let auth = 'Basic ' + window.btoa(`${e.target.login.value}:${e.target.pass.value}`);
+        // let auth = 'Basic ' + window.btoa(e.target.login.value) + ':' + window.btoa(e.target.pass.value);
         this.props.login(loginURL, auth);
     };
 
@@ -23,22 +24,22 @@ class Login extends React.Component{
                 </div>
                 <div>
                     <form onSubmit={this.submitHandler}>
-                        <p className='text-center'>
-                            <label htmlFor="">Account:
-                                <input name='login' type="text"/>
-                            </label>
-                        </p>
-                        <p className='text-center'>
-                            <label htmlFor="">Password:
-                                <input name='pass' type="password"/>
-                            </label>
-                        </p>
-                        <div className='row justify-content-between'>
-                            <button className='col-3'
-                                    onClick={() => this.props.changeStateOutside('intro')}>Cancel</button>
-                            <input className='col-3' type="submit" value='Send'/>
-                        </div>
-                    </form>
+                    <p className='text-center'>
+                        <label htmlFor="">Account:
+                            <input name='login' type="text"/>
+                        </label>
+                    </p>
+                    <p className='text-center'>
+                        <label htmlFor="">Password:
+                            <input name='pass' type="password"/>
+                        </label>
+                    </p>
+                    <div className='row justify-content-between'>
+                        <button className='col-3'
+                                onClick={() => this.props.changeStateOutside('intro')}>Cancel</button>
+                        <input className='col-3' type="submit" value='Send'/>
+                    </div>
+                </form>
                 </div>
             </div>
         );

@@ -9,7 +9,7 @@ export const login = (url, auth) => {
             method: "POST",
             headers: {
                 Authorization: auth,
-                signal: new AbortController().signal
+                // signal: new AbortController().signal
             }
         };
         let errorMsg = 'Wrong login or password';
@@ -48,8 +48,5 @@ function request(dispatch, url, init, errorMsg) {
             localStorage.setItem('Authorization', JSON.stringify({xToken, user: store.getState().user}));
             dispatch(changeStateOutside('work'));
         })
-        .catch(e => {
-            alert(errorMsg);
-            console.log(e);
-        });
+        .catch(e => alert(errorMsg));
 }
