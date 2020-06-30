@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e01c0a0b-5ef5-4179-8146-3b14437781d5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/insideComponents/bodies/FoundBody.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/insideComponents/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/insideComponents/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/insideComponents/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/insideComponents/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/insideComponents/bodies/LostFoundBody.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/insideComponents/bodies/LostBody.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/LostFoundActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/LostFoundActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actions/TwitActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/TwitActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/urls.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/urls.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -42,7 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../WEBjava30/test-fetch" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -96,7 +96,16 @@
       <workItem from="1589348785852" duration="18194000" />
       <workItem from="1589458230488" duration="29625000" />
       <workItem from="1589642382547" duration="661000" />
-      <workItem from="1589646468468" duration="20606000" />
+      <workItem from="1589646468468" duration="34047000" />
+      <workItem from="1592070006650" duration="1276000" />
+      <workItem from="1592203386479" duration="759000" />
+      <workItem from="1592217832542" duration="628000" />
+      <workItem from="1592301863528" duration="614000" />
+      <workItem from="1592372871053" duration="1283000" />
+      <workItem from="1592807388634" duration="33000" />
+      <workItem from="1593177893946" duration="5365000" />
+      <workItem from="1593540857336" duration="192000" />
+      <workItem from="1593541519263" duration="404000" />
     </task>
     <task id="LOCAL-00001" summary="First commit 16.05.2020">
       <created>1589667873797</created>
@@ -105,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589667873797</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update 17.05.2020">
+      <created>1589696080651</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589696080651</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,48 +131,53 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="First commit 16.05.2020" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit 16.05.2020" />
+    <MESSAGE value="Update 17.05.2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update 17.05.2020" />
   </component>
   <component name="WindowStateProjectService">
     <state x="530" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589200221171">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="530" y="201" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1600.900@0.0.1600.900" timestamp="1589200221171" />
-    <state x="413" y="49" key="CommitChangelistDialog2" timestamp="1589667868512">
+    <state x="413" y="49" key="CommitChangelistDialog2" timestamp="1589696079020">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="413" y="49" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1589667868512" />
-    <state x="579" y="196" key="FileChooserDialogImpl" timestamp="1589688723124">
+    <state x="413" y="49" key="CommitChangelistDialog2/0.0.1600.900@0.0.1600.900" timestamp="1589696079020" />
+    <state x="579" y="196" key="FileChooserDialogImpl" timestamp="1593541057792">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="579" y="196" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1589688723124" />
+    <state x="579" y="196" key="FileChooserDialogImpl/0.0.1600.900@0.0.1600.900" timestamp="1593541057792" />
     <state x="653" y="349" key="Github.ShareDialog" timestamp="1589667926203">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="653" y="349" key="Github.ShareDialog/0.0.1600.900@0.0.1600.900" timestamp="1589667926203" />
-    <state width="1579" height="185" key="GridCell.Tab.0.bottom" timestamp="1589696003492">
+    <state width="1579" height="185" key="GridCell.Tab.0.bottom" timestamp="1593541904641">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="185" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1589696003492" />
-    <state width="1579" height="185" key="GridCell.Tab.0.center" timestamp="1589696003492">
+    <state width="1579" height="185" key="GridCell.Tab.0.bottom/0.0.1600.900@0.0.1600.900" timestamp="1593541904641" />
+    <state width="1579" height="185" key="GridCell.Tab.0.center" timestamp="1593541904641">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="185" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1589696003492" />
-    <state width="1579" height="185" key="GridCell.Tab.0.left" timestamp="1589696003491">
+    <state width="1579" height="185" key="GridCell.Tab.0.center/0.0.1600.900@0.0.1600.900" timestamp="1593541904641" />
+    <state width="1579" height="185" key="GridCell.Tab.0.left" timestamp="1593541904640">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="185" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1589696003491" />
-    <state width="1579" height="185" key="GridCell.Tab.0.right" timestamp="1589696003492">
+    <state width="1579" height="185" key="GridCell.Tab.0.left/0.0.1600.900@0.0.1600.900" timestamp="1593541904640" />
+    <state width="1579" height="185" key="GridCell.Tab.0.right" timestamp="1593541904641">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state width="1579" height="185" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1589696003492" />
+    <state width="1579" height="185" key="GridCell.Tab.0.right/0.0.1600.900@0.0.1600.900" timestamp="1593541904641" />
     <state x="303" y="96" key="SettingsEditor" timestamp="1589046570156">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
     <state x="303" y="96" key="SettingsEditor/0.0.1600.900@0.0.1600.900" timestamp="1589046570156" />
-    <state x="611" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589696059252">
+    <state x="392" y="187" key="Vcs.Push.Dialog.v2" timestamp="1589696281952">
       <screen x="0" y="0" width="1600" height="900" />
     </state>
-    <state x="611" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.900@0.0.1600.900" timestamp="1589696059252" />
+    <state x="392" y="187" key="Vcs.Push.Dialog.v2/0.0.1600.900@0.0.1600.900" timestamp="1589696281952" />
+    <state x="611" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593541926362">
+      <screen x="0" y="0" width="1600" height="900" />
+    </state>
+    <state x="611" y="370" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.900@0.0.1600.900" timestamp="1593541926362" />
   </component>
 </project>

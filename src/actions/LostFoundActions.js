@@ -4,6 +4,7 @@ export const CHANGE_PHOTOS = 'CHANGE_PHOTOS';
 export const CHANGE_TAGS = 'CHANGE_TAGS';
 export const CHANGE_DATEPOST = 'CHANGE_DATEPOST';
 export const CHANGE_LOCATION = 'CHANGE_LOCATION';
+export const CHANGE_LF_ALL = 'CHANGE_ALL';
 
 export const changeAuthor = (value) => ({
     type: CHANGE_AUTHOR,
@@ -32,5 +33,10 @@ export const changeDatePost = (value) => ({
 
 export const changeLocation = (value) => ({
     type: CHANGE_LOCATION,
+    payload: value
+});
+
+export const changeLostFoundPost = (value) => ({
+    type: CHANGE_LF_ALL,
     payload: value
 });
